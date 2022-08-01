@@ -1,24 +1,18 @@
+// Core deps.
 import React from "react";
+
+// Local deps.
+import StopWatch from './stopwatch/StopWatch'
 import logo from "./logo.svg";
 import "./App.css";
 
-function App() {
+// App.
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="text-3xl font-bold underline">
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App flex flex-wrap items-start justify-center p-6 md:py-12">
+      <StopWatch />
+      <StopWatch />
+      <StopWatch />
     </div>
   );
 }
